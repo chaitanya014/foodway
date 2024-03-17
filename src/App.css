@@ -1,0 +1,125 @@
+/* Base styles */
+.custom-card {
+  width: 100%;
+  max-width: 250px;
+  justify-content: space-between;
+  font-family: Century Gothic, sans-serif;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 21px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: width 6s;
+  text-decoration: none;
+}
+
+.custom-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.custom-card p {
+  margin-top: 12px;
+  margin-bottom: 1rem;
+  margin-left: 10px;
+}
+
+.desc, .cuisines {
+  overflow-wrap: break-word;
+  -webkit-line-clamp: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  letter-spacing: -0.3px;
+}
+
+.carousel {
+  overflow-x: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 10px; /* Add some space for scrollbar */
+  -webkit-overflow-scrolling: touch; /* Improved scrolling experience on iOS */
+}
+
+.carousel img {
+  padding-right: 17px;
+  max-height: 199px;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.navigation-bar img {
+  height: 35px;
+  margin-right: 10px;
+  border-radius: 15px;
+}
+.title{
+  font-size: 28px;
+  font-weight: 900;
+
+}
+.full-main{
+ justify-content: space-between;
+ align-items: center;
+  display: flex;
+}
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .custom-card {
+    max-width: 100%;
+  }
+
+  .carousel img {
+    padding-right: 10px;
+    max-height: 150px;
+  }
+
+
+  button.btn.btn-sm.btn-dark.mx-1 {
+    width: 29%;
+    margin-top: 25px;
+    
+}
+.full-main{
+  display: block;
+}
+input[type="text"] {
+  width: 250px;
+}
+}
+
+@media screen and (max-width: 576px) {
+  .custom-card {
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .custom-card img {
+    border-radius: 8px;
+  }
+
+  .carousel img {
+    padding-right: 5px;
+    max-height: 120px;
+  }
+}
+
+.thumbnail_container{
+  position: relative;
+  background: rgb(220, 236, 251);
+}
+
+.thumbnail_container button{
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+
